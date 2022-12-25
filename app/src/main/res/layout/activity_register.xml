@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activity.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--        <TextView-->
+<!--            android:id="@+id/textLogin"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Login"-->
+<!--            android:layout_marginLeft="10dp" />-->
+
+        <EditText
+            android:id="@+id/etvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:padding="10dp"
+            android:hint="Login" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/textPass"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Password"-->
+<!--            android:layout_marginLeft="10dp" />-->
+
+        <EditText
+            android:id="@+id/etvPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:padding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <CheckBox
+            android:id="@+id/etvVisiblePass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make a visible password"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/textAge"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Age"-->
+<!--            android:layout_marginLeft="10dp" />-->
+
+        <EditText
+            android:id="@+id/etvAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:padding="10dp"
+            android:hint="Age"
+            android:inputType="number"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/textNumber"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Number"-->
+<!--            android:layout_marginLeft="10dp" />-->
+
+        <EditText
+            android:id="@+id/etvNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:padding="10dp"
+            android:hint="Number" />
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Registration"
+            android:textColor="#fff"
+            android:background="@drawable/button_border"/>
+
+    </LinearLayout>
+</LinearLayout>

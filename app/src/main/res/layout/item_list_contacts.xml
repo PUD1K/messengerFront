@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:background="@drawable/shape"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_number_item"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:layout_gravity="center_vertical|start"
+            android:fontFamily="monospace"
+            android:textSize="25sp"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_number_item_contact"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_vertical|start"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textColor="#808080"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/online_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:drawable/presence_online"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:text="Online"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/offline_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/offline"
+            android:padding="10dp"
+            android:layout_margin="12dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:text="Offline"/>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn_remove_contact"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+
+        android:layout_gravity="center_vertical|end"
+        android:background="@android:drawable/presence_offline"
+        android:textColor="#fff"/>
+
+
+    <TextView
+        android:id="@+id/tv_view_holder_number"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:fontFamily="monospace"
+        android:textColor="#000"/>
+</FrameLayout>

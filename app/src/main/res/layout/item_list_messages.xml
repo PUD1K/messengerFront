@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_message"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="monospace"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tv_message_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:gravity="end"
+            android:paddingTop="10dp"
+            android:layout_gravity="center_vertical|start"
+            android:fontFamily="monospace"
+            android:textSize="10sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_view_holder_number"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:fontFamily="monospace"
+        android:textColor="#000"/>
+</FrameLayout>

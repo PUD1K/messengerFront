@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="413dp"
+        android:orientation="vertical">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/textLogin"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:textSize="20dp"-->
+        <!--            android:text="Login or Number" />-->
+
+        <EditText
+            android:id="@+id/etvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:hint="Login or number"
+            android:padding="10dp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/textPass"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:text="Password"-->
+        <!--            android:textSize="20dp"-->
+        <!--            />-->
+
+        <EditText
+            android:id="@+id/etvPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <CheckBox
+            android:id="@+id/etvVisiblePass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make a visible password" />
+
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border"
+            android:text="Login"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/etv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:text="Or register now"
+            android:textColor="#0e8ec4"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</LinearLayout>
